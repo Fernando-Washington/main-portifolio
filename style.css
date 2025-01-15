@@ -75,7 +75,7 @@ menu> ul > li > a {
 }
 
 .text-container a {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -86,7 +86,7 @@ menu> ul > li > a {
     border-radius: 20px;
     position: relative;
     top: 280px;
-    left: 10%;
+    
 }
 
 /* Projects */
