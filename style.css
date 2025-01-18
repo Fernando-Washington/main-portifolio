@@ -155,3 +155,34 @@ menu> ul > li > a {
     width: 100%;
     border-radius: 0 0 10px 10px;
 }
+
+.skills {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.skills-container {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(28, 28, 37);
+    border-radius: 4px;
+}
+
+.skills-container > h2 {
+    margin-bottom: 4rem;
+}
+
+.skills-icons {
+    background-color: rgb(35, 40, 40);
+    padding: 1rem;
+    margin-bottom: 2rem; 
+    border-radius: 4px;
+}
+
+
