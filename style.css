@@ -45,22 +45,26 @@ section {
 }
 
 /* Nav */
-menu > ul {
+#menuLinks {
+    display: none;
+}
+
+nav > ul {
     text-align: center;
     background-color: rgb(44, 45, 45);
 }
 
-menu > ul > li {
+nav > ul > li {
     list-style: none;
 }
 
-menu> ul > li > a {
+nav> ul > li > a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.2rem;
 }
 
-menu > ul > li > hr {
+nav > ul > li > hr {
     display: none;
     border-color: var(--text-color); 
     border: 0;
@@ -205,18 +209,19 @@ menu > ul > li > hr {
 
 .skills-container {
     display: flex;
-    padding: 2rem 2rem 6rem 2rem;
+    padding: 2rem 2rem 8rem 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: rgb(28, 28, 37);
     border-radius: 4px;
-    height: auto;
     width: auto;
+    height: auto;
 }
 
 .skills-container > h2 {
+    margin-top: 40%;
     margin-bottom: 4rem;
 }
 
@@ -268,8 +273,12 @@ footer > p {
     display: none;
 }
 
+#menuLinks {
+    display: block;
+}
+
 /* Nav */
-menu > ul {
+nav > ul {
     display: flex;
     justify-content: space-between;
     width: 70%;
@@ -279,16 +288,16 @@ menu > ul {
     right: 54px;
 }
 
-menu> ul > li > a:hover{
+nav> ul > li > a:hover{
     color: var(--secondary-color);
     /*transition: 0.3s;*/
 }
 
-menu> ul > li > hr{
+nav> ul > li > hr{
     border-color: #27ae60; 
 }
 
-menu> ul > li > a:hover + hr{
+nav> ul > li > a:hover + hr{
     color: var(--secondary-color);
     border-color: #27ae60;
     display: block;
@@ -314,6 +323,7 @@ menu> ul > li > a:hover + hr{
     margin-bottom: 0;
     position: relative;
     top: -30px;
+    animation: slideIn 1s ease;
 }
 
 .text-container h3 {
@@ -322,9 +332,11 @@ menu> ul > li > a:hover + hr{
     margin-bottom: 2rem;
     position: relative;
     top: -20px;
+    animation: slideIn 1s ease 0.3s backwards;
 }
 .button-container {
     width: 20%;
+    animation: slideIn 1s ease 0.6s backwards;
 }
 .text-container a {
     width: 100%;
@@ -404,5 +416,16 @@ menu> ul > li > a:hover + hr{
 footer {
     background-color: rgb(28, 28, 37);
 }
+
+@keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
 }
