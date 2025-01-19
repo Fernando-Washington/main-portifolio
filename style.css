@@ -60,10 +60,25 @@ menu> ul > li > a {
     font-size: 1.2rem;
 }
 
+menu > ul > li > hr {
+    display: none;
+    border-color: var(--text-color); 
+    border: 0;
+    border-top: 2px solid var(--text-color)
+}
+
 /* Main */
 .text-container {
     height: 100vh;
     width: 100%;
+}
+
+.img-container {
+    width: auto;
+}
+
+.img-container > img {
+    width: 120px;
 }
 
 .text-container h1 {
@@ -71,6 +86,10 @@ menu> ul > li > a {
     font-size: 2.2rem;
     margin-bottom: 0.4rem;
 }
+
+/*.alternative-name {
+    display: none;
+}*/
 
 .text-container h3 {
     padding: 1%;
@@ -83,7 +102,7 @@ menu> ul > li > a {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 .text-container a {
     display: flex;
@@ -99,6 +118,12 @@ menu> ul > li > a {
 }
 
 /* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .projects-grid {
     display: flex;
@@ -187,6 +212,8 @@ menu> ul > li > a {
     text-align: center;
     background-color: rgb(28, 28, 37);
     border-radius: 4px;
+    height: auto;
+    width: auto;
 }
 
 .skills-container > h2 {
@@ -233,4 +260,149 @@ footer > p {
     position: relative;
     font-size: 2rem;
     top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+/* Header */
+.header-container i {
+    display: none;
+}
+
+/* Nav */
+menu > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 16px;
+    right: 54px;
+}
+
+menu> ul > li > a:hover{
+    color: var(--secondary-color);
+    /*transition: 0.3s;*/
+}
+
+menu> ul > li > hr{
+    border-color: #27ae60; 
+}
+
+menu> ul > li > a:hover + hr{
+    color: var(--secondary-color);
+    border-color: #27ae60;
+    display: block;
+}
+
+/* Main */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.img-container {
+    display: none;
+}
+
+.text-container h1 {
+    padding: 16px;
+    font-size: 4rem;
+    margin-bottom: 0;
+    position: relative;
+    top: -30px;
+}
+
+.text-container h3 {
+    padding: 8px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    position: relative;
+    top: -20px;
+}
+.button-container {
+    width: 20%;
+}
+.text-container a {
+    width: 100%;
+    color: var(--primary-color);
+    padding: 1rem;
+    background-color: transparent;
+    border: solid 2px var(--primary-color);
+    border-radius: 36px;
+}
+
+.text-container a:hover {
+    background-color: var(--secondary-color);
+    border-color: transparent;
+    color: var(--text-color);
+}
+/* Projects */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+}
+.projects-grid h2 {
+    margin-bottom: 3rem;
+}
+
+.div-card {
+    height: 256px;
+}
+/* Add images here*/
+
+.project-card h3,
+.project-card p,
+.project-card i {
+    background-color: rgb(52, 50, 50); 
+    /*maybe I change to other color*/
+}
+
+.project-card i {
+    padding: 2rem;
+    margin-bottom: 2.6rem;
+}
+
+.project-card i a{
+    transition: 0.3s ease-in-out;
+}
+
+.project-card i a:hover{
+    color: var(--secondary-color);
+}
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+}
+
+.skills-container > h2 {
+    margin-bottom: 2rem;
+}
+
+.skills-icons {
+    background-color: rgb(35, 40, 40);
+    padding: 2.5rem;
+}
+
+.skills-icons > i {
+    font-size: 3rem;
+}
+
+footer {
+    background-color: rgb(28, 28, 37);
+}
+
 }
