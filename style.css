@@ -22,10 +22,6 @@ body {
     overflow-x: hidden;
 }
 
-section {
-    margin-bottom: 2rem;
-}
-
 /* Header */
 .header-container {
     display: flex;
@@ -64,17 +60,12 @@ nav> ul > li > a {
     font-size: 1.2rem;
 }
 
-nav > ul > li > hr {
-    display: none;
-    border-color: var(--text-color); 
-    border: 0;
-    border-top: 2px solid var(--text-color)
-}
 
 /* Main */
 .text-container {
     height: 100vh;
     width: 100%;
+    background-color: var(--bg-color);
 }
 
 .img-container {
@@ -127,6 +118,7 @@ nav > ul > li > hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--bg-color);
 }
 
 .projects-grid {
@@ -237,7 +229,6 @@ nav > ul > li > hr {
 
 footer {
     padding: 1rem;
-    margin-top: 2rem;
 }
 footer > p {
     text-align: center;
@@ -284,20 +275,29 @@ nav > ul {
     right: 54px;
 }
 
-nav> ul > li > a:hover{
-    color: var(--secondary-color);
-    /*transition: 0.3s;*/
+.nav-item {
+    transition: 0.3s ease-in-out;
+    position: relative;
 }
 
-nav> ul > li > hr{
-    border-color: #27ae60; 
+.nav-item:hover {
+    color: var(--secondary-color);
+}
+.nav-item::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
 }
 
-nav> ul > li > a:hover + hr{
-    color: var(--secondary-color);
-    border-color: #27ae60;
-    display: block;
+.nav-item:hover::after {
+    width: 100%;
 }
+
 
 /* Main */
 .text-container {
@@ -388,21 +388,15 @@ nav> ul > li > a:hover + hr{
 
 /* Skills */
 
-.skills-container {
-    display: flex;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0px;
-    width: 100%;
-    height: auto;
+.skills {
+    background-color: var(--bg-color);
 }
-
-.skills-container > h2 {
-    margin-bottom: 2rem;
+.skills-container {
+    width: 40%;
+    background-color: var(--bg-color);
 }
 
 .skills-icons {
-    background-color: rgb(35, 40, 40);
     padding: 2.5rem;
 }
 
