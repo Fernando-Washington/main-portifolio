@@ -71,8 +71,8 @@ nav> ul > li > a {
 .img-container {
     width: 100%;
     position: relative;
-    top: -70px;
-    height: 300px;
+    top: -30px;
+    height: auto;
 }
 
 .img-container > img {
@@ -93,7 +93,6 @@ nav> ul > li > a {
     padding: 1%;
     font-size: 1.4rem;
     font-weight: 300;
-    margin-bottom: 3rem;
 }
 .button-container {
     display: flex;
@@ -107,6 +106,8 @@ nav> ul > li > a {
     justify-content: center;
     align-items: center;
     width: 80%;
+    position: relative;
+    top: -2rem;
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.2rem;
