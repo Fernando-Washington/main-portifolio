@@ -69,11 +69,14 @@ nav> ul > li > a {
 }
 
 .img-container {
-    width: auto;
+    width: 100%;
+    position: relative;
+    top: -70px;
+    height: 300px;
 }
 
 .img-container > img {
-    width: 120px;
+    width: 100%;
 }
 
 .text-container h1 {
@@ -130,6 +133,7 @@ nav> ul > li > a {
 }
 .projects-grid h2 {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .project-card { 
