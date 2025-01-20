@@ -209,19 +209,18 @@ nav > ul > li > hr {
 
 .skills-container {
     display: flex;
-    padding: 2rem 2rem 8rem 2rem;
+    padding: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: rgb(28, 28, 37);
     border-radius: 4px;
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
 .skills-container > h2 {
-    margin-top: 40%;
     margin-bottom: 4rem;
 }
 
@@ -359,6 +358,7 @@ nav> ul > li > a:hover + hr{
     align-items: center;
     width: 50%;
     height: auto;
+    margin-bottom: 2rem;
 }
 .projects-grid h2 {
     margin-bottom: 3rem;
