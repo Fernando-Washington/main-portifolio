@@ -100,14 +100,14 @@ nav> ul > li > a {
     align-items: center;
     width: 100%;
     height: auto;
+    position: relative;
+    top: -2rem;
 }
 .text-container a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
-    position: relative;
-    top: -2rem;
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.2rem;
