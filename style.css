@@ -54,12 +54,11 @@ nav > ul > li {
     list-style: none;
 }
 
-nav> ul > li > a {
+nav > ul > li > a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.2rem;
 }
-
 
 /* Main */
 .text-container {
@@ -103,6 +102,7 @@ nav> ul > li > a {
     position: relative;
     top: -2rem;
 }
+
 .text-container a {
     display: flex;
     justify-content: center;
@@ -132,6 +132,7 @@ nav> ul > li > a {
     width: 100%;
     height: auto;
 }
+
 .projects-grid h2 {
     text-align: center;
     margin-bottom: 2rem;
@@ -237,6 +238,7 @@ nav> ul > li > a {
 footer {
     padding: 1rem;
 }
+
 footer > p {
     text-align: center;
     padding: 1rem;
@@ -248,6 +250,7 @@ footer > p {
     justify-content: center;
     padding: 1rem;
 }
+
 .fa-whatsapp {
     position: relative;
     right: -16px;
@@ -290,6 +293,7 @@ nav > ul {
 .nav-item:hover {
     color: var(--secondary-color);
 }
+
 .nav-item::after {
     content: " ";
     width: 0%;
@@ -304,7 +308,6 @@ nav > ul {
 .nav-item:hover::after {
     width: 100%;
 }
-
 
 /* Main */
 .text-container {
@@ -337,10 +340,12 @@ nav > ul {
     top: -20px;
     animation: slideIn 1s ease 0.3s backwards;
 }
+
 .button-container {
     width: 20%;
     animation: slideIn 1s ease 0.6s backwards;
 }
+
 .text-container a {
     width: 100%;
     color: var(--primary-color);
@@ -364,6 +369,7 @@ nav > ul {
     height: auto;
     margin-bottom: 2rem;
 }
+
 .projects-grid h2 {
     margin-bottom: 3rem;
 }
@@ -372,7 +378,6 @@ nav > ul {
     height: 256px;
 }
 /* Add images here*/
-
 .project-card h3,
 .project-card p,
 .project-card i {
@@ -425,5 +430,4 @@ footer {
                 transform: translateY(0);
             }
         }
-
 }
