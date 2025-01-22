@@ -410,6 +410,17 @@ nav > ul {
 
 .skills-icons {
     padding: 2.5rem;
+    transition: 0.3s ease-in;
+    transition:  0.1s ease-out;
+    
+}
+
+.html-icon:hover, .py-icon:hover {
+    transform: translateX(-35%);
+}
+
+.css-icon:hover, .js-icon:hover {
+    transform: translateX(35%);
 }
 
 .skills-icons > i {
