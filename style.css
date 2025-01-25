@@ -60,6 +60,10 @@ nav > ul > li > a {
     font-size: 1.2rem;
 }
 
+.desktop-contact {
+    display: none;
+}
+
 /* Main */
 .text-container {
     height: 100vh;
@@ -310,6 +314,14 @@ nav > ul {
     width: 100%;
 }
 
+.mobile-contact {
+    display: none;
+}
+
+.desktop-contact {
+    display: block;
+}
+
 /* Main */
 .text-container {
     display: flex;
@@ -354,7 +366,6 @@ nav > ul {
     background-color: transparent;
     border: solid 2px var(--primary-color);
     border-radius: 36px;
-    transition: 0.3s ease-in-out;
 }
 
 .text-container a:hover {
@@ -412,7 +423,7 @@ nav > ul {
 
 .skills-icons {
     padding: 2.5rem;
-    transition: 1s ease-in;
+    transition: 0.9s ease-in;
     transition:  0.3s ease-out;
 }
 
