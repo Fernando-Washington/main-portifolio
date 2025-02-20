@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+    --primary-color: #2ecc71;
+    --secondary-color: #27ae60;
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header-container .logo {
+    width: 46px;
+    height: 26px;
+}
+
+.header-container i {
+    color: var(--primary-color);   
+    font-size: 2.3rem;
+}
+
+/* Nav */
+#menuLinks {
+    display: none;
+}
+
+nav > ul {
+    text-align: center;
+    background-color: rgb(44, 45, 45);
+}
+
+nav > ul > li {
+    list-style: none;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.desktop-contact {
+    display: none;
+}
+
+/* Main */
+.text-container {
+    height: 100vh;
+    width: 100%;
+    background: var(--bg-color);
+}
+
+.img-container {
+    width: 100%;
+    position: relative;
+    top: -30px;
+    height: auto;
+}
+
+.img-container > img {
+    width: 100%;
+}
+
+.text-container h1 {
+    padding: 2% 0% 0 2%;
+    font-size: 2.2rem;
+    margin-bottom: 0.4rem;
+}
+
+/*.alternative-name {
+    display: none;
+}*/
+
+.text-container h3 {
+    padding: 1%;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -2rem;
+}
+
+.text-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.projects-grid h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.project-card { 
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.div-card {
+    height: 180px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+/* Add images here*/
+.div-img-1 {
+    background-image: url(/assets/netflix-clone-project.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-img-2 {
+    background-image: url(/assets/ztech-project.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-img-3 {
+    background-image: url(/assets/portifolio-project.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.project-card h3,
+.project-card p,
+.project-card i {
+    width: 100%;
+    background-color: rgb(52, 50, 50);
+}
+
+.project-card i {
+    padding: 0.5rem 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-card i a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.fa-link {
+    border-radius: 0 0 0 10px;
+}
+
+.fa-github {
+    border-radius: 0 0 10px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+/* Skills */
+.skills {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background-color: #1c1c25;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1c1c25;
+}
+
+.skills-container > h2 {
+    margin-bottom: 2rem;
+}
+
+.skills-icons {
+    background-color: #232828;
+    padding: 1rem;
+    margin-bottom: 2rem; 
+    border-radius: 4px;
+    color: var(--secondary-color);
+}
+
+.skills-icons > i {
+    font-size: 2.5rem;
+    margin: 5%;
+    color: var(--secondary-color) ;
+}
+
+footer {
+    padding: 1rem;
+}
+
+footer > p {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.fa-whatsapp {
+    position: relative;
+    right: -16px;
+    font-size: 3rem;
+    color: #25d366;
+}
+
+.fa-hand-pointer {
+    position: relative;
+    font-size: 2rem;
+    top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+/* Header */
+.header-container i {
+    display: none;
+}
+
+#menuLinks {
+    display: block;
+}
+
+/* Nav */
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    background-color: #1a1a1a;
+    position: absolute;
+    top: 16px;
+    right: 54px;
+}
+
+.nav-item {
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-item:hover {
+    color: var(--secondary-color);
+}
+
+.nav-item::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+.mobile-contact {
+    display: none;
+}
+
+.desktop-contact {
+    display: block;
+}
+
+/* Main */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.img-container {
+    display: none;
+}
+
+.text-container h1 {
+    padding: 16px;
+    font-size: 4rem;
+    margin-bottom: 0;
+    position: relative;
+    top: -30px;
+    animation: slideIn 1s ease;
+}
+
+.text-container h3 {
+    padding: 8px;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    position: relative;
+    top: -20px;
+    animation: slideIn 1s ease 0.3s backwards;
+}
+
+.button-container {
+    width: 20%;
+    animation: slideIn 1s ease 0.6s backwards;
+}
+
+.text-container a {
+    width: 100%;
+    color: var(--primary-color);
+    padding: 1rem;
+    background-color: transparent;
+    border: solid 2px var(--primary-color);
+    border-radius: 36px;
+}
+
+.text-container a:hover {
+    background-color: var(--secondary-color);
+    border-color: transparent;
+    color: var(--text-color);
+}
+/* Projects */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.projects-grid h2 {
+    margin-bottom: 3rem;
+}
+
+.div-card {
+    height: 256px;
+}
+/* Add images here*/
+.project-card h3,
+.project-card p,
+.project-card i {
+    background-color: rgb(52, 50, 50); 
+    /*maybe I change to other color*/
+}
+
+.project-card i {
+    padding: 2rem;
+    margin-bottom: 2.6rem;
+}
+
+.project-card i a{
+    transition: 0.3s ease-in-out;
+}
+
+.project-card i a:hover{
+    color: var(--secondary-color);
+}
+
+/* Skills */
+
+.skills {
+    background-color: var(--bg-color);
+}
+.skills-container {
+    width: 40%;
+    background-color: var(--bg-color);
+}
+
+.skills-icons {
+    padding: 2.5rem;
+    transition: 0.9s ease-in;
+    transition:  0.3s ease-out;
+}
+
+.html-icon:hover, .py-icon:hover {
+    transform: translateX(-35%);
+}
+
+.css-icon:hover, .js-icon:hover {
+    transform: translateX(35%);
+}
+
+.skills-icons > i {
+    font-size: 3rem;
+}
+
+footer {
+    background-color: rgb(28, 28, 37);
+}
+
+@keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+}
