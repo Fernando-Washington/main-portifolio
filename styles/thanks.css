@@ -58,11 +58,6 @@ section {
     font-size: 1.1rem;
 }
 
-.text-container > a > i:hover {
-    color: var(--secondary-color);
-
-}
-
 .image-container {
     display: flex;
     justify-content: center;
