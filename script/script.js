@@ -6,3 +6,7 @@ function clickMenu() {
         menuLinks.style.display = 'none';
     }
 }
+
+function notFound() {
+    alert('Não encontrado')
+}
