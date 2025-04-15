@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -433,13 +437,6 @@ nav > ul {
     transition:  0.3s ease-out;
 }
 
-.html-icon:hover, .py-icon:hover {
-    transform: translateX(-35%);
-}
-
-.css-icon:hover, .js-icon:hover {
-    transform: translateX(35%);
-}
 
 .skills-icons > i {
     font-size: 3rem;
